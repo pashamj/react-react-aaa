@@ -1,0 +1,30 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# Общие настройки для всех файлов
+root = true
+
+[*]
+# Устанавливаем символы окончания строки
+end_of_line = lf
+
+# Очищаем пробелы в конце строк
+trim_trailing_whitespace = true
+
+# Добавляем новую строку в конце каждого файла
+insert_final_newline = true
+
+# Используем 2 пробела для отступов
+indent_style = space
+indent_size = 2
+
+# Используем кодировку UTF-8
+charset = utf-8
+
+# Настройки для Markdown и JSON файлов
+[*.md, *.json]
+# Отключаем удаление пробелов в конце строк (Markdown и JSON могут их использовать)
+trim_trailing_whitespace = false
+
+# Настройки для JavaScript и JSX файлов
+[*.js, *.jsx]
+# Все правила наследуются от общих настроек
